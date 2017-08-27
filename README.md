@@ -91,7 +91,7 @@ and deploying this sample.
 
 1.  Change the OAUTH2_CALLBACK line of config.json to the following to enable online authentication. Replace [YOUR_PROJECT_ID] with your project ID:
 
-	"OAUTH2_CALLBACK": "https://[YOUR_PROJECT_ID].appspot.com/auth/google/callback"
+        "OAUTH2_CALLBACK": "https://[YOUR_PROJECT_ID].appspot.com/auth/google/callback"
 
 1.  Deploy the app:
 
