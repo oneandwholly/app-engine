@@ -39,8 +39,6 @@ and deploying this sample.
 
     * Set `GCLOUD_PROJECT` in `config.json` to your Google Cloud Platform
       project ID.
-    * Set `DATA_BACKEND` in `config.json` to one of `"datastore"`, `"cloudsql"`,
-      or `"mongodb"`.
     * Set `CLOUD_BUCKET` in `config.json` to the name of your Google Cloud
       Storage bucket.
     * Set `OAUTH2_CLIENT_ID` in `config.json`.
@@ -77,10 +75,6 @@ and deploying this sample.
 
                     yarn run init-cloudsql
 
-    * If `DATA_BACKEND` is set to `"mongodb"`:
-
-        1.  Set `MONGO_URL` in `config.json`, e.g. `"mongodb://username:password@123.45.67.890:27017"`.
-
 1.  Start the app using NPM or Yarn:
 
     * Using NPM:
@@ -94,6 +88,10 @@ and deploying this sample.
 1.  View the app at [http://localhost:8080](http://localhost:8080).
 
 1.  Stop the app by pressing `Ctrl+C`.
+
+1.  Change the OAUTH2_CALLBACK line of config.json to the following to enable online authentication. Replace [YOUR_PROJECT_ID] with your project ID:
+
+	"OAUTH2_CALLBACK": "https://[YOUR_PROJECT_ID].appspot.com/auth/google/callback"
 
 1.  Deploy the app:
 
